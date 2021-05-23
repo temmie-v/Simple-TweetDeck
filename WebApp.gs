@@ -22,7 +22,7 @@ function doPost(e) {
 }
 
 function record(created_at, screen_name, tweet) {
-    var sheet = SpreadsheetApp.openById('*************************************').getSheetByName('form');
+    var sheet = SpreadsheetApp.openById('1BAjn3uHBhu5yMS7BxDn2EdiopgjBo0uUziej2dlPT5g').getSheetByName('form');
     var lastrow = sheet.getLastRow() + 1;
     sheet.getRange(lastrow, 1).setValue(created_at);
     sheet.getRange(lastrow, 2).setValue(screen_name);
