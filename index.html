@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <base target="_top">
+    <meta charset="UTF-8">
+    <title>
+        Simple TweetDeck
+    </title>
+    <style>
+        h2 {
+            color: #00acee;
+        }
+
+        p {
+            font-size: 1.1em;
+        }
+
+        /* 継承のテスト */
+        .bg-yellow {
+            background: yellow;
+        }
+
+        .account {
+            line-height: 2em;
+        }
+
+        input[type="submit"] {
+            background: #00acee;
+
+            color: white;
+        }
+
+        input[type="reset"] {
+            background: red;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>
+        Simple TweetDeck
+    </h2>
+    <p>
+        このアプリによる投稿のviaは<span class="bg-yellow">Twitter for MacBook </span>として表示されます。
+    </p>
+    <form method="post"
+        action="https://script.google.com/macros/s/AKfycbylkBcw9-bNZn4EKal1RdJfDI6trFqZobvLuyU41N6i9wD7LT6Tdrw8PVsC4WVBzBpozw/exec">
+        <p>
+            投稿するアカウントを選択：
+            <br>
+            <label class="account">
+                <input type="radio" name="account" value="co_planar">
+                temmie (@co_planar)
+            </label>
+            <br>
+            <label class="account">
+                <input type="radio" name="account" value="Anex86_exe">
+                みかん (@Anex86_exe)
+            </label>
+            <br>
+            <label class="account">
+                <input type="radio" name="account" value="dfgz_">
+                list (@dfgz_)
+            </label>
+        </p>
+
+        <p>
+            ツイートする内容：
+            <br>
+            <label>
+                <textarea name="tweet" wrap="soft" minlength="1" maxlength="280" cols="40" rows="7"
+                    placeholder="英字280字以内"></textarea>
+            </label>
+        </p>
+        <p>
+            <input type="submit" value="Tweet">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+</body>
+
+</html>
