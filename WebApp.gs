@@ -28,4 +28,3 @@ function record(created_at, screen_name, tweet) {
     sheet.getRange(lastrow, 2).setValue(screen_name);
     sheet.getRange(lastrow, 3).setValue(tweet);
 }
-
